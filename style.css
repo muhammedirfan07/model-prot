@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+    
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* scroll-behavior: smooth; */
+}
+nav{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    margin-left: 50px;
+}
+.logo{
+    width: 130px;
+}
+.link-item{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+} 
+.link{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    transition: color underline 0.5s;
+} 
+.link:hover{
+    color: red;
+    text-decoration: underline;
+}
+.home-content{
+    margin: 13% 0px 0px 8%;
+}
+#userName{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "Pacifico", system-ui;
+}
+#Lname{
+    font-family: "Pacifico", system-ui;
+    color: orange;
+    
+}
+
+#user-details{
+    line-height: 1.2;
+   
+}
+#btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 30px;
+
+}
+.home-image{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+   
+}
+.grp1{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition:  bottom  2s,left 1s;
+}
+.home-image:hover #shape{
+    bottom: 60px;
+
+}
+.home-image:hover #girl{
+    left: 30%;
+
+}
+/* ------------------------------------------------------------ */
+#about{
+    margin: 20% 8% 0% 8%;
+}
+.section-head{
+    text-align: center;
+    
+}
+.mainHead{
+    font-size: 30px;
+}
+.subhead{
+    font-size: 20px;
+    color: rgb(56, 154, 214);
+}
+.about-body{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 50px;
+}
+.img1{
+    width: 80%; 
+    /* filter:drop-shadow(1px 3px 5px  #0da8ab);  */
+   
+}
+.about-content{
+    font-size: 20px;
+    text-align: justify;
+   
+}
+.information{
+    margin-top: 1.3rem;
+}
+.infoBox{
+    margin-bottom: 10px;
+  
+}
+.infoBox>span{
+    margin-left: 10px;
+    font-family: "Philosopher", system-ui;
+}
+/* ----------------------------------------- */
+#skills{
+    margin:8% 8% 0px 8%;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0rem;
+}
+.barhead,.barpercent{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.Htmlbar{
+    background-color: orange;
+    width: 0.6rem;
+    width: 89%;
+}
+.Cssbar{
+    background-color: orange;
+    width: 0.6rem;
+    width: 85%;
+}
+.JSbar{
+    background-color: orange;
+    width: 0.6rem;
+    width: 80%;
+}
+.Reactbar{
+    background-color: orange;
+    width: 0.6rem;
+    width: 83%;
+}
+.myskill{
+    width: 80%;
+}
+/* --------------------------------------------- */
+#contact{
+    margin:8% 8% 0 8%;
+}
+.iconscolloctions{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    /* border: solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+.brands{
+    color: black;
+    font-size: 1.5rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,rgba(54, 217, 235, 0.773),rgb(57, 144, 231),rgb(2, 0, 128));
+    
+}
+.icon:hover .brands{
+    color: #fff;
+    /* animation */
+    animation: rotate 3s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(45deg);
+    }
+    20%{
+        transform: rotate(-45deg);
+    }
+    40%{
+        transform: rotate(45deg);
+    }
+    60%{
+        transform: rotate(-45deg);
+    }
+    80%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+/* ----------------------------- */
+footer{
+    margin: 8% 0% 0% 0% ;
+    text-align: center;
+   
+}
+.uparrow{
+    float: right;
+    right: 0;
+    margin-top: -40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
